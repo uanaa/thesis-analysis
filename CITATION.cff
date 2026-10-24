@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this code and the corresponding thesis when using these analyses."
+title: "Analysis code for X-ray-emitting planetary nebulae and LE01 observations"
+type: software
+authors:
+  - family-names: Yuan
+    given-names: Haoyang
+version: 0.1.0
+date-released: 2026-10-25
+repository-code: "https://github.com/uanaa/thesis-analysis"
