@@ -41,6 +41,14 @@ Mission event files, calibration products and the full HASH export are supplied
 separately from this code package. FXTDAS and HEASoft/XSPEC are required for the
 IC 1297 reduction and spectral fitting.
 
+## Supplementary 4XMM pair catalogue
+
+[Download the full 73-pair CSV](Chapter5_4XMM_reconstructed_pairs_73.csv)
+and read the [column descriptions and selection notes](4XMM_pairs_README.md).
+The table contains 73 distinct 4XMM sources paired with 67 HASH PNe within
+20 arcsec. It accompanies Appendix A, Section A.2 of the thesis and is supplied
+separately from the v0.1.0 code ZIP.
+
 ## Version and citation
 
 The code follows the thesis revision of 24 October 2026. Release version: 0.1.0.
