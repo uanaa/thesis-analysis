@@ -5,15 +5,17 @@ planetary nebulae and the LE01 telescope.
 
 ## Download the source
 
-**[Download thesis-analysis v0.1.0](thesis-analysis-v0.1.0.zip)** (25 October 2026).
+**[Download the updated source](thesis-analysis-20261030.zip)** (30 October 2026).
 
 The complete source tree is distributed as a ZIP archive. Extract it to retain
-the directories used by the scripts. The archive contains 70 files, including
-23 Python sources, 8 shell scripts, workflow documentation and selected reference
-results. See `SHA256SUMS.txt` for its checksum.
+the directories used by the scripts. The update contains 26 Python sources,
+8 shell scripts, workflow documentation and selected reference results.
+It adds fixed-mask and matching checks, the IC 1297 joint flux profile, and
+the reviewed 73-pair catalogue. See `SHA256SUMS.txt` for checksums.
+The [initial v0.1.0 archive](thesis-analysis-v0.1.0.zip) remains available.
 
 ```bash
-unzip thesis-analysis-v0.1.0.zip
+unzip thesis-analysis-20261030.zip
 cd thesis-analysis
 python -m venv .venv
 source .venv/bin/activate
@@ -29,7 +31,7 @@ require the observing data and catalogue inputs described inside the archive.
 
 | Directory inside the archive | Contents |
 |---|---|
-| `le01/` | Hot-pixel screening, paired Crab comparisons and GRB aperture counts |
+| `le01/` | Adopted archived selection, Crab statistics and GRB aperture counts |
 | `pn/` | HASH morphology matching, ChanPlaNS controls and optical-file inventory |
 | `ic1297/` | EP/FXT processing, joint spectral fits and image diagnostics |
 | `reference/` | Selected numerical outputs, cohort tables and fit transcripts |
@@ -43,15 +45,18 @@ IC 1297 reduction and spectral fitting.
 
 ## Supplementary 4XMM pair catalogue
 
-[Download the full 73-pair CSV](Chapter5_4XMM_reconstructed_pairs_73.csv)
+[Download the reviewed 73-pair CSV](Chapter5_4XMM_reviewed_pairs_73_20261030.csv)
 and read the [column descriptions and selection notes](4XMM_pairs_README.md).
 The table contains 73 distinct 4XMM sources paired with 67 HASH PNe within
 20 arcsec. It accompanies Appendix A, Section A.2 of the thesis and is supplied
-separately from the v0.1.0 code ZIP.
+both separately and inside the updated source ZIP. All 30 soft-selected pairs
+are classified: 12 published associations, four preliminary candidates, five
+rejected associations and nine unresolved cases. The
+[original reconstructed CSV](Chapter5_4XMM_reconstructed_pairs_73.csv) is retained.
 
 ## Version and citation
 
-The code follows the thesis revision of 24 October 2026. Release version: 0.1.0.
+The current source follows the thesis revision of 30 October 2026.
 Use `CITATION.cff` and cite the scientific sources identified in the thesis and
 workflow documentation. Cite a fixed repository commit or release in the thesis.
 
